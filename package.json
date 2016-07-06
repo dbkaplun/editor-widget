@@ -26,8 +26,6 @@
     "lodash": "3.10.1",
     "minimist": "1.2.0",
     "rc": "1.1.6",
-    "react": "0.14.5",
-    "react-blessed": "0.1.7",
     "semver": "5.1.0",
     "slap-util": "1.0.6",
     "text-buffer": "8.0.6"
@@ -37,7 +35,13 @@
     "babel-preset-es2015": "6.3.13",
     "babel-preset-react": "6.3.13",
     "get-random-port": "0.0.1",
+    "react": "0.14.x",
+    "react-blessed": "0.1.x",
     "tape": "4.4.0"
+  },
+  "peerDependencies": {
+    "react": "0.14.x",
+    "react-blessed": "0.1.x"
   },
   "author": "Dan Kaplun <dbkaplun@gmail.com>",
   "license": "MIT"
