@@ -6,7 +6,7 @@ import {render} from 'react-blessed'
 import fs from 'fs'
 import path from 'path'
 
-import {createScreen} from 'base-widget/test/util'
+import util from 'base-widget/dist/test/util'
 import {Editor} from '..'
 
 class EditorTest extends Component {
@@ -14,7 +14,7 @@ class EditorTest extends Component {
 }
 
 test("Editor", t => {
-  var editor = render(<EditorTest />, createScreen()).refs.editor
+  var editor = render(<EditorTest />, util.createScreen()).refs.editor
 
   t.test(".open", st => {
     st.test("should throw EACCES for a file with perms 000", sst => {
